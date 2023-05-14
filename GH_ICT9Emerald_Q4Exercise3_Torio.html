@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Length Converter</title>
+</head>
+<body>
+	<center><br>
+	<h3>Length Converter</h3>
+	<h4>Centimeter to Feet</h4><br>
+	<p>Input a value in centimeter, and it will be converted into feet. </p><br>
+	<input type="number" oninput="LengthConvert (this.value)" onchange="LengthConvert (this.value)" placeholder="Enter Centimeter"><br><br>
+	<span id="Ft"></span><span> Feet</span>
+	<script>
+		function LengthConvert(getValue) {
+			document.getElementById('Ft').innerHTML=getValue*0.032808 //this number is multiplied to the cm value to get the ft value
+		}
+	</script>
+	</center>
+</body>
+</html>
